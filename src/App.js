@@ -21,7 +21,11 @@ function App() {
 				{activeMenu === "Design" && (
 					<FadeIn>
 						<ScrollAnimationContainer>
-							<img src={test} alt="test" width="60%" />
+							<img
+								src={test}
+								alt="test"
+								style={{ width: "60vw" }}
+							/>
 						</ScrollAnimationContainer>
 						<Img src={design1} alt="Design 1" />
 						<Img src={design2} alt="Design 2" />
@@ -101,19 +105,46 @@ const BannerContainer = styled.div`
 	align-items: center;
 	padding: 0px 100px;
 	height: 100px;
+
+	@media (max-width: 768px) {
+		padding: 0px 50px;
+		height: 80px;
+	}
+
+	@media (max-width: 480px) {
+		flex-direction: column;
+		justify-content: center;
+		padding: 0px 20px;
+		height: auto;
+		gap: 20px;
+	}
 `;
 
 const Logo = styled.img`
-	height: 60px;
+	height: 50px;
+
+	@media (max-width: 768px) {
+		height: 40px;
+	}
+
+	@media (max-width: 480px) {
+		height: 30px;
+	}
 `;
 
 const Menu = styled.div`
 	display: flex;
 	gap: 20px;
+
+	@media (max-width: 480px) {
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
 `;
 
 const MenuItem = styled.span`
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 28.64px;
 	font-family: "Pretendard-Regular";
 	font-weight: 700;
@@ -125,5 +156,15 @@ const MenuItem = styled.span`
 	&:hover {
 		opacity: 1;
 		color: #fff;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	@media (max-width: 480px) {
+		font-size: 16px;
+		line-height: 22px;
 	}
 `;
