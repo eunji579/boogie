@@ -112,11 +112,8 @@ const BannerContainer = styled.div`
 	}
 
 	@media (max-width: 480px) {
-		flex-direction: column;
-		justify-content: center;
 		padding: 0px 20px;
-		height: auto;
-		gap: 20px;
+		height: 40px;
 	}
 `;
 
@@ -128,7 +125,7 @@ const Logo = styled.img`
 	}
 
 	@media (max-width: 480px) {
-		height: 30px;
+		height: 20px;
 	}
 `;
 
@@ -137,14 +134,13 @@ const Menu = styled.div`
 	gap: 20px;
 
 	@media (max-width: 480px) {
-		flex-direction: column;
 		align-items: center;
-		gap: 10px;
+		gap: 5px;
 	}
 `;
 
 const MenuItem = styled.span`
-	font-size: 20px;
+	font-size: 22px;
 	line-height: 28.64px;
 	font-family: "Pretendard-Regular";
 	font-weight: 700;
@@ -164,7 +160,7 @@ const MenuItem = styled.span`
 	}
 
 	@media (max-width: 480px) {
-		font-size: 16px;
+		font-size: 10px;
 		line-height: 22px;
 	}
 `;
