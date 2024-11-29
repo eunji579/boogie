@@ -2,11 +2,12 @@ import styled from "styled-components";
 import { useState } from "react";
 import GlobalStyle from "./GlobalStyle";
 import logo from "./assets/logo.svg";
-import design1 from "./assets/design_1.png";
-import design2 from "./assets/design_2.png";
-import design3 from "./assets/design_3.png";
-import research1 from "./assets/research_1.png";
-import research2 from "./assets/research_2.png";
+import design1 from "./assets/design_modi1.png";
+import design2 from "./assets/design_modi2.png";
+import design3 from "./assets/design_modi3.png";
+import design4 from "./assets/design_modi4.png";
+import research1 from "./assets/research_final2.png";
+import research2 from "./assets/research_modi2.png";
 import test from "./assets/test.svg";
 import { ScrollAnimationContainer } from "./scroll-animation-container";
 
@@ -20,16 +21,10 @@ function App() {
 			<ImageContainer>
 				{activeMenu === "Design" && (
 					<FadeIn>
-						<ScrollAnimationContainer>
-							<img
-								src={test}
-								alt="test"
-								style={{ width: "60vw" }}
-							/>
-						</ScrollAnimationContainer>
 						<Img src={design1} alt="Design 1" />
 						<Img src={design2} alt="Design 2" />
 						<Img src={design3} alt="Design 3" />
+						<Img src={design4} alt="Design 4" />
 					</FadeIn>
 				)}
 				{activeMenu === "Research" && (
